@@ -1,61 +1,20 @@
+
+/**/
 .ad-one .flex-container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
     height: 100vh;
+}
 
-    position: relative;/*بيتحرك عليه جدار الطوب*/
 
-}
-.ad-one .flex-container .adone-slogan{
-    padding-bottom: 180px 0;
-}
-.ad-one .flex-container .personal-portrait{
-    padding: 120px 0;
-}
 
 
 .adone-slogan{
-    flex: 1 1 200px;
-    align-self: flex-start;
+    flex: 1 1 50%;
+    align-self: flex-end;
     height: 100%; /*المستطيل الاحمر ياخد من الطول دا نسبة*/
 }
-.personal-portrait{
-    flex: 1 1 200px;
-    align-self: flex-end;
-
-    transition: transform 0.5s;
-}
-
-
-.personal-portrait img{
-    width: 80%;
-    height: 100%;
-}
-
-
-.wall-break{
-    width: 200px;
-    height: 470px;
-
-    position: absolute;
-    left: 5%;
-    top: 30%;
-
-    z-index: -1;
-
-    transform: translateX(80px);
-    
-}
-.personal-portrait:hover{
-    transform: translateX(-140px) ;
-}
-.wall-break img{
-    width: 100%;
-    height: 65%;
-}
-
 .red-rect-above,
 .adone-slogan .red-rect{
     width: 92%;
@@ -65,15 +24,47 @@
     height: 20%;
 }
 .adone-slogan .red-rect{
-    margin-top: 10%;
+    margin-top: 7%;
+    margin-bottom: 7%;
     height: 25%;
 }
 
 
+.personal-portrait{
+    flex: 1 0 50%;
+    align-self: center;
+
+    height: 75%;
+    text-align: left;
+
+    position: relative;/*بيتحرك عليه جدار الطوب*/
+}
 
 
+.personal-portrait img{
+    width: 85%;
+    height: 85%;
+
+    transition: transform 0.7s;
+}
 
 
+.wall-break{
+    width: 200px;
+    height: 470px;
 
+    position: absolute;
+    left: 0%;
+    top: 4%;
 
+    z-index: -1;
 
+    transform: translateX(80px);
+}
+.personal-portrait img:hover{
+    transform: translateX(-140px) ;
+}
+.wall-break img{
+    width: 80%;
+    height: 65%;
+}

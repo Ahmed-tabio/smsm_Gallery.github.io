@@ -6,7 +6,7 @@
 }
 .ad-two .hero-flex-container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
@@ -29,25 +29,44 @@
 
     border: solid white 2px;
     border-right: none;
-
-    position: relative;
 }
 
 .hero-impression .backgrounded{
-    z-index: -1;
-
+    position: relative;
+    width: 99.8%;
 }
 
 .portrait-pre,
 .portrait{
-    position: absolute;
-    /*هنا هيتغير مع تغيير الصورة لصور أفضل TEMP*/
-    top: 185px;
-    left: 235px;
+   
 
     width: 202px;
     height: 240px;
+
+    padding: 10px;
 }
+.portrait-pre{
+    position: absolute;
+    /*هنا هيتغير مع تغيير الصورة لصور أفضل TEMP*/
+    top: 185px;
+    left: 230px;
+}
+.portrait{
+    position: absolute;
+    top: -5%;
+    left: 2%;
+
+    /* top: 170px;
+    left: 235px; */
+}
+.portrait-pre >img{
+    width: 95%;
+    height: 90%;
+    
+    padding: 1px 1.5px;
+    transform: rotate(6deg);
+}
+
 
 
 
@@ -72,7 +91,8 @@
 
 
 .portrait img{
-    width: 99%;
+    width: 100%;
+    height: 107%;
 }
 
 /* .effected{
