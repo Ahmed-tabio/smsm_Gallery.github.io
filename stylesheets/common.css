@@ -1,0 +1,36 @@
+/* .section-paddings{
+    padding: 90px 0;
+} */
+
+
+.advertising-Section{
+    height: 100vh;
+}
+.hero-flex-container{
+    padding-top: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.describtion,
+.main-word{
+    color: rgb(0, 0, 0);
+}
+
+.main-word{
+    font-size: 100px;
+    font-weight: bolder;
+}
+.describtion{
+    font-size: 52px;
+    font-weight: bold;
+}
+.red-word{
+    color: #d80909;
+}
+
+
+

@@ -1,0 +1,97 @@
+/* .ad-three{
+    border: 4px solid #d80909;
+} */
+
+.hero-flex-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.ad-three .slogan{
+    flex: 1 1 50%;
+    text-align: center;
+}
+.ad-three .slogan{
+    color: black;
+}
+
+.ad-three .hero-impression{
+    flex: 2 1 50%;
+
+    width: 750px;
+    height: 450px;
+
+    margin-top: 50px;
+    padding-bottom: 10px;    
+}
+
+.ad-three .hero-impression img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d80909;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.red-word.momaiaz{
+    font-size: 52px;
+}

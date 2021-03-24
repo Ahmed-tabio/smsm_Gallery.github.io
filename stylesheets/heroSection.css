@@ -1,0 +1,94 @@
+.ad-two.advertising-Section{
+    /*هناك العديد من الخصائص لهذا العنصر المشترك*/
+    background-color: rgb(216, 9, 9);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ad-two .hero-flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+      /*االبةرتريه الممطبق عليه الايفيكت بيتحرك بالنسبة للاب دا*/
+    
+}
+.ad-two .slogan{
+    flex: 1 2 300px;
+    width: 40%;
+    color: #ffffff;
+}
+.ad-two .slogan .main-word,
+.ad-two .slogan .describtion{
+    color: #fff;
+}
+
+.hero-impression.flex-item{
+    flex: 1 1 300px;
+    width: 40%;
+
+    border: solid white 2px;
+    border-right: none;
+
+    position: relative;
+}
+
+.hero-impression .backgrounded{
+    z-index: -1;
+
+}
+
+.portrait-pre,
+.portrait{
+    position: absolute;
+    /*هنا هيتغير مع تغيير الصورة لصور أفضل TEMP*/
+    top: 185px;
+    left: 235px;
+
+    width: 202px;
+    height: 240px;
+}
+
+
+
+/* .portrait-pre{
+    width: 210px;
+    height: 250px; عملت هوامش عشان اعرف اعمل هوفر عليها
+    z-index: 1;
+}
+
+.portrait{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -2;
+}
+.portrait-pre:hover .portrait{
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+} */
+
+
+
+
+.portrait img{
+    width: 99%;
+}
+
+/* .effected{
+    visibility: hidden;
+    opacity: 0;
+} */
+
+/* .portrait-pre img:hover .effected{
+    visibility: visible;
+    opacity: 1;
+
+    z-index: 10;
+}
+.portrait-pre img:hover .portrait-pre{
+    visibility: hidden;
+    opacity: 0;
+
+    z-index: -1;
+} */

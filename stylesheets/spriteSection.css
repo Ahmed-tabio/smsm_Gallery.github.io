@@ -1,0 +1,87 @@
+:root{
+    --main-color: #765244;
+    --sub-color: #333;
+}
+/*
+    Sprite Section
+*/
+.sprite{
+    display: flex;
+    flex-flow: row nowrap;
+
+    margin: 80px;
+}
+.sprite-item{
+    flex: 1 1 20%;
+    text-align: center;
+    border-right: 1px solid var(--main-color) ;
+}
+.sprite-item:last-child{
+    border-right: 0;
+}
+
+.sprite-icon{
+    height: 55px; /*لانه ديف فارغ مكنش هيظهر حاجة الا لو خد هاي*/
+    background-image: url(../images/service-icon.png);
+    background-repeat: no-repeat;
+
+    transition: background-position-y 1s;
+}
+
+.sprite-icon.sprite-icon1{
+    background-position: center 0px;
+}
+.sprite-item:hover .sprite-icon1{
+    background-position: center -93px;
+}
+
+.sprite-icon.sprite-icon2{
+    background-position: center -182px;
+
+}
+.sprite-item:hover .sprite-icon2{
+    background-position: center -275px;
+}
+
+.sprite-icon.sprite-icon3{
+    background-position: center -366px;
+
+}
+.sprite-item:hover .sprite-icon3{
+    background-position: center -459px;
+}
+
+.sprite-icon.sprite-icon4{
+    background-position: center -550px;
+
+}
+.sprite-item:hover .sprite-icon4{
+    background-position: center -643px;
+}
+
+.sprite-icon.sprite-icon5{
+    background-position: center -732px;
+}
+.sprite-item:hover .sprite-icon5{
+    background-position: center -825px;    
+}
+
+
+
+
+
+.sprite-info{
+}
+.sprite-info h3{
+    font-size: 17px;
+}
+.sprite-info span{
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.spriteSection hr{
+    color: gray;
+    margin-bottom: 40px;
+}

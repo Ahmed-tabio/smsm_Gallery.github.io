@@ -1,0 +1,74 @@
+header{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(202, 202, 202);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 1; /*عشان تركب علي الصورة في الهيرو*/
+}
+
+.header-flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header .logo-and-name{
+    flex: 2 1 0;
+    position: relative;
+}
+nav{
+    flex: 3 1 0;
+}
+.smsm-brand{
+    display: inline-block;
+    margin-right: 8%;
+    margin-top: 15px;
+}
+
+.logo{ 
+    width: 5%; /*the logo img container*/
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+.logo img{
+    width: 100%;
+}
+
+/*Typography*/
+header h1{
+    color: rgb(196, 5, 5);
+    font-size: 26px;
+}
+header h1,
+header nav .contact-link,
+header nav .gallery-link{
+    font-family: 'Jomhuria', cursive;
+}
+header nav .contact-link a,
+header nav .gallery-link a{
+    font-size: 20px;
+    color: gray;
+
+    transition: color 0.25s;
+}
+header nav .contact-link a:hover,
+header nav .gallery-link a:hover{
+    color: black;
+}
+nav{
+    text-align: center;
+    font-size: 22px;
+}
+nav li{
+    display: inline;
+}
+nav .contact-link{
+    margin-right: 50px;
+}
