@@ -1,10 +1,124 @@
 footer{
     height: 100vh;
-    position: relative;
     background-color: rgb(216, 9, 9);
+
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-flow: row nowrap; /*no wrap?*/
+
+
+    /*TEMP*/
+    font-family: Harmattan;
+    color: #fff;
 }
 
 /*ستايلات التواصل من خلال واتساب*/
+.contacting{
+    flex: 2 1 30%;
+    height: 100%;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;    
+}
+.phone-view{
+    
+    flex: 1 1 30%;
+    height: 30%;
+    margin: 10% 0 0 0;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.phone-view h3{
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+.phone-view .whatsapp{
+    width: 75%;
+    height: 50px;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 1%;
+    border: 2px solid #fff;
+    color:#fff;
+    transition: all  0.2s; /*color, background-color, width,  font-size*/
+    font-size: 46px;
+    text-align: center;
+    line-height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.phone-view .whatsapp a{
+    color: #fff;
+}
+.phone-view .whatsapp:hover{
+    width: 80%;
+    font-size: 52px;
+    background-color: #fff;
+    color: rgb(216, 9, 9);
+}
+
+
+
+.simple-form{
+    flex: 2 1 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    max-width: 80%;
+    margin: 5% 0;
+}
+.simple-form fieldset {
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 24px 30px;
+
+    /* text-align: center; */
+    
+    font-size: 46px;
+}
+
+.simple-form  input[type=text],
+.simple-form  input[type=submit]{
+    margin: 30px auto;
+    padding: 10px;
+    border: none;
+}
+.simple-form  input[type=text]:focus {
+    background-color: rgb(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+    color: #fff;
+}
+.simple-form  input[type=submit]{  
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.simple-form  input[type=submit]:hover{
+    background-color: rgb(216, 9, 9);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/*=======================*/
+
+
+
+
 
 
   
@@ -15,24 +129,188 @@ footer{
 
 
 /*ستايلات اللوجو*/
+.logo-flex-wrapper{
+    flex: 1 3 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
 .centered-logo{
-    width: 150px;
+    width: 150px; /*fixed size?*/
     height: 150px;
-
     padding: 40px;
     border: 2px solid gray;
     border-radius: 50%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     background-color: #ffffff;
-
     text-align: center;
+
 }
 .centered-logo img{
-    width: 70%;
-    height: 110%;
+    width: 70%; /*from 150px*/
+    height: 110%;/*from 150px*/
+    line-height: 150px; /*وسطنة الصورة رأسيا*/
 }
+
+
+
+/* following styles*/
+
+.following{
+    flex: 2 1 30%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.following h3{
+    font-size: 46px;
+    max-width: 80%;
+    max-height: 30%;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+.following h3 span{
+    font-weight: 900;
+}
+
+
+.socialWrapper {
+    text-align: center;
+    letter-spacing: 2px;
+}
+ul.social {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+ul.social li{
+    display: inline-block;
+    padding: 0 10px;
+}
+ul.social li:not(:first-child){
+    border-right: 1px solid #fff;
+}
+ul.social li a{
+    color: #fff;
+    width: 100%;   
+}
+ul.social li a i{
+    transition: transform 0.5s;
+}
+ul.social li a i:hover{
+    transform: rotate(360deg);
+}
+
+.following .waiting-app{
+    margin-top: 40px;
+    padding: 30px;
+}
+.following .waiting-app >span{
+    font-size: 42px;
+    font-weight: bolder;
+}
+.following .waiting-app span .insallah{
+    font-size: 38px;
+    font-weight: normal;
+}
+
+
+body{
+    position: relative;
+}
+/* out of footer but هكتبه هنا*/
+.copyright{
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 5px;
+    font-size: 1.2em;
+    background-color:  rgb(216, 9, 9);
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding: 100px 0;
+
+        
+    
+
+        
+    }
+    .following{
+        order: 1;
+    }
+    .contacting{
+        order:2;
+    }
+    .logo-flex-wrapper{
+        order:3;
+    }
+
+
+    .phone-view h3{
+        font-size: 32px;
+        text-align: center;
+    }
+    .phone-view .whatsapp{
+        font-size: 22px;
+    }
+    .phone-view .whatsapp:hover{
+        font-size: 32px;
+    }
+    .simple-form fieldset{
+        font-size: 30px;
+    }
+    .following h3{
+        font-size: 32px;
+        text-align: center;
+    }
+    .following .waiting-app >span{
+        font-size: 32px;
+    }
+    .following .waiting-app span .insallah{
+        font-size: 28px;
+    }
+    .copyright{
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */ /*same range less than 768px width*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {} */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */ /*the CASE we alreadu begin for*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

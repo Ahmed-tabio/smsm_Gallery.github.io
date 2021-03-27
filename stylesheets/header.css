@@ -1,74 +1,208 @@
+/*for mobile phones <=600 */
 header{
     width: 100%;
-    height: 55px;
+    height: auto;
+    position: fixed; 
     background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(202, 202, 202);
-
-    position: fixed;
-    left: 0;
-    top: 0;
-
-    z-index: 1; /*عشان تركب علي الصورة في الهيرو*/
+    z-index: 1; 
 }
 
-.header-flex-container{
+header .header-flex-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+header .header-flex-container .logo-and-name{
+    width: 100%;
+    text-align: center;
+    /*this value added th the auto .header-flex-container height*/
+    padding: 20px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
 }
-
-header .logo-and-name{
-    flex: 2 1 0;
-    position: relative;
+header .header-flex-container .logo-and-name .logo{
+    /*from 100% .logo-and-name width*/
+    width: 10%;
+    /*and auto height of .header-flex-container*/
+    height: auto; 
+    /*keep space in the left is 2% of .logo-and-name dynamic width */
+    margin-left: 0.1%;
 }
-nav{
-    flex: 3 1 0;
+    header .header-flex-container .logo-and-name .logo img{
+        width: 100%;
+        height: 100%;
+    }
+header .header-flex-container .logo-and-name .smsm-brand{
+    /* width: 40%; */
+    font-size: 36px;
 }
-.smsm-brand{
-    display: inline-block;
-    margin-right: 8%;
-    margin-top: 15px;
-}
-
-.logo{ 
-    width: 5%; /*the logo img container*/
-    position: absolute;
-    top: 5px;
-    right: 0px;
-}
-.logo img{
+    
+header .header-flex-container .logo-and-name .smsm-brand a{
     width: 100%;
 }
+/*=====================*/
+nav{
+    width: 100%;
+    text-align: center;
+}
+/* nav ul{  
+} */
+nav ul li{
+    width: 100%;
+    /*this value added th the auto .header-flex-container height*/
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+
 
 /*Typography*/
-header h1{
+header h1 a{
     color: rgb(196, 5, 5);
-    font-size: 26px;
 }
 header h1,
 header nav .contact-link,
-header nav .gallery-link{
+header nav .gallery-link,
+header nav .event-link,
+header nav .calling-link{
     font-family: 'Jomhuria', cursive;
 }
 header nav .contact-link a,
-header nav .gallery-link a{
+header nav .gallery-link a,
+header nav .event-link a,
+header nav .calling-link a{
     font-size: 20px;
     color: gray;
 
     transition: color 0.25s;
 }
 header nav .contact-link a:hover,
-header nav .gallery-link a:hover{
+header nav .gallery-link a:hover,
+header nav .event-link a:hover,
+header nav .calling-link a:hover{
     color: black;
+} 
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    header nav .contact-link a,
+    header nav .gallery-link a,
+    header nav .event-link a,
+    header nav .calling-link a{
+        font-size: 42px;
+    }
+    header .header-flex-container .logo-and-name .smsm-brand{
+        font-size: 62px;
+    }
+
 }
-nav{
-    text-align: center;
-    font-size: 22px;
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header{
+        width: 100%;
+        height: 55px;
+        line-height: 56px;  /*وسطنة العناصر رأسيا*/
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(202, 202, 202);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1; /*عشان تركب علي الصورة في الهيرو*/
+    }
+    header .header-flex-container{
+        flex-flow: row nowrap;
+        height: 100%;
+        line-height: 100%;
+    }
+    header .header-flex-container .logo-and-name{
+        flex: 3 1 30%;
+        padding: 10px 0;
+        height: 100%;
+        border: none;
+    }
+    header .header-flex-container .logo-and-name .logo{
+        width: 6%; /*the logo img container*/
+        height: 100%;
+        margin: 0 5%;
+        line-height: 100%;
+    }
+    header .header-flex-container .logo-and-name .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    header .header-flex-container .logo-and-name .smsm-brand{
+
+    }
+    header .header-flex-container .logo-and-name .smsm-brand a{
+        font-size: 26px;
+    }
+    /*=========================*/
+    nav{
+        flex: 4 1 60%;
+        text-align: center;
+        font-size: 22px;
+    }
+    nav ul{
+
+    }
+    nav ul li{
+        display: inline;
+    }
+
+    nav .contact-link,
+    nav .gallery-link,
+    nav .event-link,
+    nav .calling-link{
+        margin: 0 25px;
+        border: none;
+    }
+
+    nav a{
+        font-size: 20px !important; 
+    }
+
+
+
+
 }
-nav li{
-    display: inline;
-}
-nav .contact-link{
-    margin-right: 50px;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    width: 100%;
 }

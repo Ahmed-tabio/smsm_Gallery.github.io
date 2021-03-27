@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Harmattan;
+
+  /* background-color: #222222; */
+  background-image: url(../assets/images/RamadanEvent/pattern.png);
+  background-size: 150px 150px;
+  background-repeat: repeat;
+}
+
+.event-wraper{
+    padding: 5%;
+}
+
+.event-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/images/RamadanEvent/helal\ we\ fwanes.png);
+    background-position: top center;
+    background-size: 1100px 890px;
+    background-color: rgb(255, 255, 255, 0.2);
+    background-origin: border-box;
+    
+}
+
+.event-header {
+  text-align: center;
+  padding: 60px;
+  margin-top: 30px;
+}
+.event-header h1{
+    font-size: 64px;
+    color: rgb(196, 5, 5);
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.event-header p{
+    letter-spacing: 1.2;
+    font-size: 32px;
+    font-weight: bolder;
+    /* color: #dfad5b; */
+    color: #9b7942;
+    background-color: rgba(255, 255, 255, 0.7);
+
+
+}
+
+
+/*  */
+.overlay{
+    width: 100%;
+    background-color: rgb(0, 0, 2, 0.5);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width:  992px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    body{
+        padding-top: 300px;
+    }
+    header{
+        top: 0;
+    }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  body{
+      padding-top: 200px;
+  }
+  header{
+      top: 0;
+  }
+}
