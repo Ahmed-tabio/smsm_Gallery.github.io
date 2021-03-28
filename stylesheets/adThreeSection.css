@@ -22,11 +22,10 @@
 .ad-three .hero-impression{
     flex: 2 1 50%;
 
-    width: 750px;
+    width: 650px;
     height: 450px;
 
-    margin-top: 50px;
-    padding-bottom: 10px;    
+    padding: 30px 0;   
 }
 
 .ad-three .hero-impression img{
@@ -94,4 +93,43 @@
 
 .red-word.momaiaz{
     font-size: 52px;
+}
+
+
+
+/*Our starter CASE*/
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .hero-flex-container{
+        padding: 0;
+    }
+    .ad-three .slogan{
+        flex: 100%;
+        padding: 50px 0;
+    }
+    .ad-three .slogan .momaiaz,
+    .ad-three .slogan .main-word,
+    .ad-three .slogan .describtion{
+        font-size: 28px;
+    }
+    .ad-three .slogan .main-word{
+        font-size: 32px;
+    }
+    .ad-three .hero-impression{
+        flex: 100%;
+    
+        width: 100%;
+        height: 100%;
+
+        text-align: center;
+    
+        
+    }
+    
+    .ad-three .hero-impression img{
+        width: 80%;
+        height: 100%;
+        border: 1px solid #d80909;
+    }
+
 }

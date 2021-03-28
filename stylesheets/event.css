@@ -2,8 +2,7 @@ body {
   margin: 0;
   font-family: Harmattan;
 
-  /* background-color: #222222; */
-  background-image: url(../assets/images/RamadanEvent/pattern.png);
+  background-image: url(../assets/images/RamadanEvent/patternoptimized.jpg);
   background-size: 150px 150px;
   background-repeat: repeat;
 }

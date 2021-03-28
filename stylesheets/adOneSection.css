@@ -89,16 +89,17 @@
 @media only screen and (max-width: 992px) {
     .ad-one{
         margin-top: 220px;
+        height: auto;
     }
     .ad-one .grid-container { 
         display: grid;
         width: 100%;
-        height: 500px;
+        height: auto;
     
         background-color: rgb(255, 255, 255);
     
         grid-template-columns: 100%;
-        grid-template-rows:  100px 150px 500px 100px;
+        grid-template-rows:  150px 150px 300px 150px;
     
         overflow: visible;
     }
@@ -117,6 +118,10 @@
     }
 
 
+    .ad-one .grid-container .personal-portrait img{
+        width: 50%;
+        height: 80%;   
+    }
     .ad-one .grid-container .slogan .main-word,
     .ad-one .grid-container .slogan .describtion{
         font-size: 28px;
@@ -137,9 +142,9 @@
         margin-bottom: 20px;
         z-index: 0;
     }
-    .ad-one .grid-container .personal-portrait img{
+    /* .ad-one .grid-container .personal-portrait img{
         padding: 5px 0;
-    }
+    } */
 
     .personal-portrait >img:hover{
         transform: translateX(0) ;
