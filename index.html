@@ -66,66 +66,45 @@
         </header> 
         <main>
             <!--ارسم نفسك وعلقها ف اوضتك-->
-            <section class="advertising-Section section-paddings ad-one">
-                <div class="container">
-                    <div class="flex-container">
-                        <div class="adone-slogan"><!--flex-item-->
-                            <div class="red-rect-above"></div>
+            <section class="ad-one advertising-Section section-paddings">
+                    <div class="grid-container">
+                        <div class="row1col1"> <!--1-->
+                            <div class="red-rect-above"></div> 
+                        </div>
+                        
+                        <div class="slogan"><!--2-->
                             <h2 class="main-word">حوِّلها من صورة <br> <span class="red-word">لرسمة ديجيتال</span>!</h2>
                             <p  class="describtion">إرسم أكتر صورة ليك بتحبها</p>
-                            <div class="red-rect"></div>
                         </div> 
-                                
-                        <div class="personal-portrait"><!--flex-item-->
+                        <div class="row3col1"><!--3-->
+                            <div class="red-rect-under"></div>
+                        </div>    
+                        <div class="personal-portrait"><!--4-->
                             <img src="assets/images/adOne/personalportraiicon.png" alt="خالد سليم, رسم بورتريه للمشاهير"/>
                              <!--صورة جدار حائط خلف البورتريه-->
                             <div class="wall-break">
                                 <img src="assets/images/adOne/wallbreaksedited.png" alt="">
                             </div>
-                        </div>                        
-                    </div>
+                        </div>  
                 </div>    
             </section>
             <!--اعمل هدية واتطمن من تأثير ادهاشها-->
             <Section class="ad-two advertising-Section">
                 <div class="container">
-                    <div class="hero-flex-container"> 
-                        <div class="slogan flex-item">
+                    <div class="flex-container"> 
+                        <div class="slogan"> 
                             <p  class="describtion"> إرسم بورتريه هدية و</p>
                             <h2 class="main-word"> إتطمن من تأثير<br> إدهاشها!</h2>
                         </div>
-
-
-                        <div class="hero-impression flex-item">
-                            <div class="backgrounded">
-                                <img src="assets/images/hero/inspiration.png" alt="">
-
-                                <div class="stimulus portrait-pre">
-                                    <img src="assets/images/hero/wwod.webp" alt="">
-                                    
-                                    <div class="portrait effected" data-tilt data-tilt-max="50" data-tilt-speed="500" data-tilt-perspective="300" data-tilt data-tilt-scale="1.35">
-                                        <img src="assets/images/hero/portrait.png" alt="بورتريه عند التسليم, رد فعل لهدية في مناسبة">
-                                    </div>
+                        <div class="portrait">
+                            <img src="assets/images/hero/inspiration.png" alt="">
+                            <div class="portrait-back">
+                                <img src="assets/images/hero/wwod.webp" alt="">
+                                <div class="portrait-effected" data-tilt data-tilt-max="50" data-tilt-speed="500" data-tilt-perspective="300" data-tilt data-tilt-scale="1.35">
+                                    <img src="assets/images/hero/portrait.png" alt="بورتريه عند التسليم, رد فعل لهدية في مناسبة">
                                 </div>
-    
-                                
                             </div>
-
-
-
-                            
                         </div>
-
-                        <!--محاولة ناجحة ان شاء الله-->
-                        <!-- <div class="stimulus portrait-pre">
-                            <img src="assets/images/hero/portrait2.png" alt="">
-                        </div> -->
-                        <!--absolute block البورتريه صاحب الايفيكت--> 
-                        <!--data-tilt-perspective="300"-->
-                        <!-- <div class="portrait effected" data-tilt data-tilt-max="50" data-tilt-speed="500" data-tilt-perspective="300" data-tilt data-tilt-scale="1.35">
-                            <img src="assets/images/hero/portrait.png" alt="بورتريه عند التسليم, رد فعل لهدية في مناسبة">
-                        </div> -->
-                        <!--====================================================-->
                     </div>
                 </div>
             </Section>
@@ -212,7 +191,7 @@
        <!--vanilla titl.js for portrait-->
        <script type="text/javascript" src="java Scripts/vanilla-tilt.js"></script>
        <script>
-            VanillaTilt.init(document.querySelector(".portrait"), {
+            VanillaTilt.init(document.querySelector(".portrait-effected"), {
 		    max: 35,
             speed: 400,
             glare: true,

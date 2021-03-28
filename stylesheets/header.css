@@ -123,7 +123,7 @@ header nav .calling-link a:hover{
         position: fixed;
         left: 0;
         top: 0;
-        z-index: 1; /*عشان تركب علي الصورة في الهيرو*/
+        z-index: 2; /*عشان تركب علي الصورة في الهيرو*/
     }
     header .header-flex-container{
         flex-flow: row nowrap;

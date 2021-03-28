@@ -1,70 +1,154 @@
-
-/**/
-.ad-one .flex-container{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+.ad-one .grid-container { 
+    display: grid;
+    width: 100%;
     height: 100vh;
+
+    background-color: rgb(255, 255, 255);
+
+    grid-template-columns: 60% 40%;
+    grid-template-rows:  25% 40% 25%;
+    grid-gap: 5%; 
+
+    overflow: hidden;
 }
 
-
-
-
-.adone-slogan{
-    flex: 1 1 50%;
-    align-self: flex-end;
-    height: 100%; /*المستطيل الاحمر ياخد من الطول دا نسبة*/
+/*==========================================================*/
+.ad-one .grid-container .slogan{
+    grid-area: 2 / 1 / span 1 / span 1; /*start row:2 start col:1*/
 }
-.red-rect-above,
-.adone-slogan .red-rect{
-    width: 92%;
+.ad-one .grid-container .row1col1{
+    grid-area: 1 / 1 / span 1 / span 1; /*start row:1 start col:1*/
+}
+.ad-one .grid-container .row3col1{
+    grid-area: 3 / 1 / span 1 / span 1; /*start row:3 start col:1*/
+}
+.ad-one .grid-container .personal-portrait{
+    grid-area: 1 / 2 / span 3 / span 1; /*start row:3 start col:1*/
+}
+/*
+==================== Design purposes ============================
+*/
+/* enter the paragraph*/
+.ad-one .grid-container .slogan{
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.ad-one .grid-container .row1col1 .red-rect-above,
+.ad-one .grid-container .row3col1 .red-rect-under{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
     background-color: rgb(216, 9, 9);
 }
-.red-rect-above{
-    height: 20%;
+.ad-one .grid-container .personal-portrait{
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: flex-start;
 }
-.adone-slogan .red-rect{
-    margin-top: 7%;
-    margin-bottom: 7%;
-    height: 25%;
-}
-
-
-.personal-portrait{
-    flex: 1 0 50%;
-    align-self: center;
-
+.ad-one .grid-container .personal-portrait img{
+    width: 65%;
     height: 75%;
-    text-align: left;
 
-    position: relative;/*بيتحرك عليه جدار الطوب*/
+    z-index: 1;
+    transition: transform 0.5s;
 }
-
-
-.personal-portrait img{
-    width: 85%;
-    height: 85%;
-
-    transition: transform 0.7s;
-}
-
-
 .wall-break{
-    width: 200px;
-    height: 470px;
-
+    width: 250px;
+    height: 540px;
     position: absolute;
-    left: 0%;
-    top: 4%;
-
-    z-index: -1;
-
-    transform: translateX(80px);
+    left: 0;
+    top: 0;
+    transform: translate(40% ,20%);
 }
-.personal-portrait img:hover{
-    transform: translateX(-140px) ;
+.personal-portrait >img:hover{
+    transform: translateX(-30%) ;
 }
 .wall-break img{
-    width: 80%;
-    height: 65%;
+    width: 100%;
+    height: 100%;
 }
+/*
+=================Responsive====================
+*/
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {   
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/*Our starter CASE*/
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .ad-one{
+        margin-top: 220px;
+    }
+    .ad-one .grid-container { 
+        display: grid;
+        width: 100%;
+        height: 500px;
+    
+        background-color: rgb(255, 255, 255);
+    
+        grid-template-columns: 100%;
+        grid-template-rows:  100px 150px 500px 100px;
+    
+        overflow: visible;
+    }
+    /*==========================================================*/
+    .ad-one .grid-container .slogan{
+        grid-area: 2 / 1 / span 1 / span 1; /*start row:2 start col:1*/
+    }
+    .ad-one .grid-container .row1col1{
+        grid-area: 1 / 1 / span 1 / span 1; /*start row:1 start col:1*/
+    }
+    .ad-one .grid-container .row3col1{
+        grid-area: 4 / 1 / span 1 / span 1; /*start row:4 start col:1*/
+    }
+    .ad-one .grid-container .personal-portrait{
+        grid-area: 3 / 1 / span 1 / span 1; /*start row:3 start col:1*/
+    }
+
+
+    .ad-one .grid-container .slogan .main-word,
+    .ad-one .grid-container .slogan .describtion{
+        font-size: 28px;
+    }
+    .wall-break{
+        display: none;
+    }
+    .ad-one .grid-container .row1col1 .red-rect-above,
+    .ad-one .grid-container .row3col1 .red-rect-under{
+        width: 100%;
+        height: 100%;
+    }
+    .ad-one .grid-container .personal-portrait{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin-bottom: 20px;
+        z-index: 0;
+    }
+    .ad-one .grid-container .personal-portrait img{
+        padding: 5px 0;
+    }
+
+    .personal-portrait >img:hover{
+        transform: translateX(0) ;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+
+
+

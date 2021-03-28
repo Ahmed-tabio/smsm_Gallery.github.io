@@ -1,0 +1,153 @@
+/*Reduntant*/
+.container{
+    width:70%;
+    margin: 0 auto;
+}
+.main-word{
+    font-size: 100px;
+    font-weight: bolder;
+}
+.describtion{
+    font-size: 52px;
+    font-weight: bold;
+}
+.red-word{
+    color: #d80909;
+}
+.ad-two .slogan .main-word,
+.ad-two .slogan .describtion{
+    color: #fff;
+}
+
+
+
+.ad-two.advertising-Section{
+    /*هناك العديد من الخصائص لهذا العنصر المشترك*/
+    background-color: rgb(216, 9, 9);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ad-two .flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.ad-two .flex-container .slogan{
+    flex: 60%;
+    color: #ffffff;
+}
+.ad-two .flex-container .portrait{
+    flex: 40%;
+
+    height: 80%;
+    width: 40%;
+    
+    border: solid white 1px;
+    border-right: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.ad-two .flex-container .portrait > img{
+    width: 100%;
+    height: 90%;
+}
+
+.ad-two .flex-container .portrait .portrait-back{
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    width: 145px;
+    height: 200px;
+}
+.ad-two .flex-container .portrait .portrait-back img{
+    transform: rotate(4deg);
+}
+.ad-two .flex-container .portrait .portrait-back .portrait-effected{
+    position: absolute;
+    top: -7%;
+    left: -15%;
+    width: 180px;
+    height: 230px;
+    transform: rotate(-7deg);
+}
+
+.ad-two .flex-container .portrait .portrait-back img,
+.ad-two .flex-container .portrait .portrait-back .portrait-effected img{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+=================Responsive====================
+*/
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {   
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/*Our starter CASE*/
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .ad-two .flex-container{
+        flex-direction: column;
+
+        width: 100%;
+        height: 100vh; /*auto ?*/
+    }
+    .ad-two .flex-container .slogan{
+        flex: 100%;
+        color: #ffffff;
+        font-size: 28%;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .main-word{
+        font-size: 52px;
+        font-weight: bolder;
+    }
+    .describtion{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .ad-two .flex-container .portrait{
+        flex: 100%;
+    
+        height: 70%;
+        width: 40%;
+        border: none;
+    
+    }
+    .ad-two .flex-container .portrait> img{
+        height: 100%;
+        width: 100%;
+    }
+    .ad-two .flex-container .portrait .portrait-back,
+    .ad-two .flex-container .portrait .portrait-back .portrait-effected{
+        display: none;
+    }
+
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+
+
+
