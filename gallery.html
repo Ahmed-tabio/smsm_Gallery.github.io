@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar"  dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <meta name="keywords" content="سمسم جاليري هدية بورتريه رسم ديجيتال">
+        <meta name="describtion" content="صفحة ويب لعرض أعمال شركة سمسم جاليري  للتصميمات, 
+        رسم ديجيتال, بورتريه, هدية joاتطمن من تأثير ادهاشها.">
+        <title> سمسم جاليري | جاليري</title>
+        <!--touch font awesome-->
+        <link rel="stylesheet" href="stylesheets/all.min.css">
+        <!-- Place your kit's code here -->
+        <script src="https://kit.fontawesome.com/dca523f549.js" crossorigin="anonymous"></script>
+        <!--سمسم جاليري font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+        <!--تأثير ادهاشها font-->
+        <!--the whole body font temporirly-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap" rel="stylesheet">
+        <!--swiper.js stylesheet-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!--CCS Reset-->
+        <link rel="stylesheet" href="stylesheets/CSSResets.css">
+        <!--main General Style-->
+        <link rel="stylesheet" href="stylesheets/mainStyle.css">
+        <!--Common Styles-->
+        <link rel="stylesheet" href="stylesheets/common.css">
+        <!-- Header Section-->
+        <link rel="stylesheet" href="stylesheets/header.css">
+        <!--Slider Gallery Section-->
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <!--Gallery Optimization-->
+        <link rel="stylesheet" href="stylesheets/galleryCustomization.css">
+        
+        
+        <!--whats direct icon-->
+        <!-- <link rel="stylesheet" href="stylesheets/whasappdirecticon.css"> -->
+    </head>
+    <body>
+        <header> 
+            <div class="container">
+
+                <div class="header-flex-container"><!--Flex Container-->
+                    <div class="logo-and-name"><!--logo box flex item-->
+                        <div class="logo">
+                            <img src="assets/images/logo/logo.png" alt="Our Logo: Magician Casquette">
+                        </div>
+                        <div class="smsm-brand">
+                            <h1><a href="index.html">سمسم جاليري</a></h1>
+                        </div>
+                    </div>
+
+                    <nav><!--navigation box flex item-->
+                        <ul>
+                            <li class="calling-link"><a href="tel:01126258559">01126258559 <i class="fa fa-phone fa-small" aria-hidden="true"></i> اتصل بنا</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header> 
+
+        <!--the Main Gallery-->
+        <Section class="swiper-gallary" id="gallery"><!--flex container-->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="assets/images/gallery/1.jpg" alt="" class="image img1"> </div>
+                <div class="swiper-slide"> <img src="assets/images/gallery/2.jpg" alt="" class="image img2"> </div>
+                <div class="swiper-slide"> <img src="assets/images/gallery/3.jpg" alt="" class="image img3"> </div>
+                <div class="swiper-slide"> <img src="assets/images/gallery/4.jpg" alt="" class="image img4"> </div>
+                <div class="swiper-slide"> <img src="assets/images/gallery/5.jpg" alt="" class="image img5"> </div>
+                <div class="swiper-slide"> <img src="assets/images/gallery/6.jpg" alt="" class="image img6"> </div>
+                <div class="swiper-slide"> <img src="assets/images/gallery/7.jpg" alt="" class="image img7"> </div>
+                <div class="swiper-slide"> <img src="assets/images/gallery/8.png" alt="" class="image img8"> </div> 
+                <div class="swiper-slide"> <img src="assets/images/gallery/9.jpg" alt="" class="image img8"> </div> 
+                
+            </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+        </Section>
+
+        <!--swiper.js scriptfile-->
+       <script src="java Scripts/swiperScriptSource.js"></script><!--https://unpkg.com/swiper/swiper-bundle.min.js-->
+       <script>
+            var swiper = new Swiper('.swiper-gallary', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 50, //200
+            modifier: 1,
+            slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            });
+       </script>
+    </body>
+</html>

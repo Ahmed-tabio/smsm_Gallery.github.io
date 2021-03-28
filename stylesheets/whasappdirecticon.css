@@ -1,0 +1,16 @@
+.whatsapp-fixed-icon{
+    position: fixed;
+    top: 90%;
+    left: 60%;
+
+    width: 600px;
+    height: 600px;
+}
+.whatsapp-fixed-icon a{
+    
+
+}
+.whatsapp-fixed-icon a i{
+    color: #25D366;
+    /* color: rgb(216, 9, 9); */
+}

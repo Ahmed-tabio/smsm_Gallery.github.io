@@ -69,6 +69,10 @@ footer{
     background-color: #fff;
     color: rgb(216, 9, 9);
 }
+.phone-view .whatsapp a:hover{
+    color: rgb(216, 9, 9);
+    
+}
 
 
 

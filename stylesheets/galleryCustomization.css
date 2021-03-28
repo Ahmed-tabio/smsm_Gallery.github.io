@@ -1,0 +1,13 @@
+header{
+    background-color: #111 ;
+    border: none;
+}
+
+header h1 a{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+header nav .calling-link a:hover{
+    color: #fffbfb;
+    font-size: 14px;
+} 

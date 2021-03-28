@@ -38,6 +38,9 @@
         <link rel="stylesheet" href="stylesheets/style.css">
         <!--Footer Section-->
         <link rel="stylesheet" href="stylesheets/footer.css">
+        
+        <!--whats direct icon-->
+        <link rel="stylesheet" href="stylesheets/whasappdirecticon.css">
     </head>
     <body>
         <header> 
@@ -55,8 +58,8 @@
 
                     <nav><!--navigation box flex item-->
                         <ul>
-                            <li class="event-link"><a href="event.html">بالمناسبة</a></li>
-                            <li class="gallery-link"><a href="#gallery">معرض أعمالنا</a></li>
+                            <li class="event-link"><a href="event.html" target="_blank">بالمناسبة</a></li>
+                            <li class="gallery-link"><a href="gallery.html" target="_blank">معرض أعمالنا</a></li>
                             <li class="contact-link"><a href="#contact">تواصل معنا</a></li>
                             <li class="calling-link"><a href="tel:01126258559">01126258559 <i class="fa fa-phone fa-small" aria-hidden="true"></i> اتصل بنا</a></li>
                         </ul>
@@ -142,13 +145,11 @@
             </Section>
         </main>
         <footer id="contact">
-            <!-- <p>في كل مناسبة بنكون شفرة فك حيرتك بهدايا مميزة</p> -->
-
             <div class="contacting"> <!--يمين-->
                 <div class="phone-view">
                     <h3>تواصل معانا واتساب الآن</h3>
                     <div class="whatsapp">
-                        <ahref="http://whatsapp.com">01126258559</a>
+                        <a href="http://whatsapp.com" target="_blank">01126258559</a>
                     </div>
                 </div>
                 <div class="simple-form"> 
@@ -159,7 +160,7 @@
                             <br>
                             <input type="text" placeholder="رقم واتساب لديك ...">
                         </label>
-                        <input type="submit" name="submit" value="ارسل">
+                        <a href="mailto:ahmed3bkarino33.33@gmail.com?&subject=محتاج%20اتعامل%20معاكم&body=01*********%20السلام%20عليكم%20كنت%20عاوز%20بورتريه%20شبه%20..........%20فممكن %20حضراتكم%20تتواصلوا%20معايا%20علي%20الميل%20دا%20او%20دا%20رقم%20موبايل%20واتساب" target="_blank"><input type="submit" name="submit" value="ابعت"></a> 
                     </fieldset>
                 </div>
             </div>
@@ -175,9 +176,9 @@
                 <h3>تابعنا علي السوشيال واتعرف علي  <span>شغلنا</span> وعن <span>عروضنا</span></h3>
                 <div class="social-wrapper">
                     <ul class="social">
-                        <li><a href="https://facebook.com/arximughal"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-                        <li><a href="https://twitter.com/arximughal"><i class="fab fa-instagram fa-3x"></i></a></li>
-                        <li><a href="https://plus.google.com/+ArslanAslam123"><i class="fa fa-youtube-square fa-3x"></i></a></li>
+                        <li><a href="https://facebook.com/arximughal" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                        <li><a href="https://twitter.com/arximughal" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></li>
+                        <li><a href="https://plus.google.com/+ArslanAslam123" target="_blank"><i class="fa fa-youtube-square fa-3x"></i></a></li>
                         
                     </ul>
                 </div>
@@ -187,8 +188,13 @@
                 </div>
             </div>
         </footer>
-        <div class="copyright"> &copy; 2021 ahmed-khaled  All rights reserved.</div>
-       <!--vanilla titl.js for portrait-->
+        <div class="copyright"> &copy; 2021 ahmed-khaled  All rights reserved.</div>      
+        
+        <div class="whatsapp-fixed-icon">
+            <a href="http://whatsapp.com" target="_blank"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a> 
+        </div> 
+        
+        <!--vanilla titl.js for portrait-->
        <script type="text/javascript" src="java Scripts/vanilla-tilt.js"></script>
        <script>
             VanillaTilt.init(document.querySelector(".portrait-effected"), {
