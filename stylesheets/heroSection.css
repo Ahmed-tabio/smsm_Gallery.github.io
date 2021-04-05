@@ -22,8 +22,8 @@
     height: 80%;
     width: 40%;
     
-    border: solid white 1px;
-    border-right: none;
+    /* border: solid white 1px; */
+    border-left: solid white 0.5px;
 
     display: flex;
     justify-content: center;

@@ -1,0 +1,130 @@
+.containing{
+    background-color: rgb(39, 33, 33);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    position: relative;
+}
+.containing .celebritypasses{
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.containing .logohat{
+    width: 4%;
+    height: 15%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.containing .logohat img{
+    width: 100%;
+    height: 100%;
+}
+/*=============================================*/
+.containing .celebrity-wrapper{
+    margin-left: 10%;
+    flex:60%;
+    position: relative;
+}
+.containing .celebrity-wrapper div{
+    position: absolute;
+    left: 0px;
+    top: 90%;
+    transform: translateY(-90%);
+    width: 40%;
+    height: 80%;
+    transition: all 0.5s;
+    border: 3px solid #000;
+}
+.containing .celebrity-wrapper .image1{
+    left: 0px;
+    z-index: 5;
+    height: 80%;
+}
+.containing .celebrity-wrapper .image2{
+    left: 20%;
+    z-index: 4;
+    height: 70%;
+}
+.containing .celebrity-wrapper .image3{
+    left: 40%;
+    z-index: 3;
+    height: 60%;
+}
+.containing .celebrity-wrapper .image4{
+    left: 60%;
+    z-index: 2;
+    height: 50%;
+}
+.containing .celebrity-wrapper .image5{
+    left: 80%;
+    z-index: 1;
+    height: 30%;
+}
+.containing .celebrity-wrapper div img{
+    width: 100%;
+    height: 100%;
+}
+/**==================================================================*/
+.containing .view{
+    margin-right: 15%;
+    flex:40%;
+    text-align: start;
+}
+.containing .view #introduce-celebrity{
+    color:  rgb(165, 5, 5);
+    padding: 20px 0;
+    margin: 3% 15% 0 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.containing .view #introduce-celebrity i{
+    transform: rotate(90deg);
+}
+/*==================================================*/
+.containing .view .view-window{
+    height: 92%;
+}
+.containing .view .view-window .portrait{
+    width:60%;
+    height: 90%;
+}
+.containing .view .view-window .portrait img{
+    width: 100%;
+    height: 100%;
+}
+
+/*for mobile phones 992px and down*/
+@media only screen and (max-width: 992px){
+    .containing .celebrity-wrapper{
+        margin-left: 0;
+        flex:100%;
+        position: relative;
+    }
+    .containing .celebrity-wrapper div{
+        width: 25%;
+        height: 30%;
+    }
+    .containing .celebritypasses{
+        font-size: 28px;
+        text-align: center;
+    }
+    .containing .logohat{
+        width: 7%;
+        height: 10%;
+    }
+    .containing .view{
+        margin-right: 0;
+        flex:0;
+        /* text-align: start; */
+        display: none;
+    }
+}

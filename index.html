@@ -34,6 +34,8 @@
         <link rel="stylesheet" href="stylesheets/heroSection.css">
         <!--adThree Section-->
         <link rel="stylesheet" href="stylesheets/adThreeSection.css">
+        <!--celibrity Section-->
+        <link rel="stylesheet" href="stylesheets/celecrity.css">
         <!--Slider Gallery Section-->
         <link rel="stylesheet" href="stylesheets/style.css">
         <!--Footer Section-->
@@ -91,6 +93,41 @@
                         </div>  
                 </div>    
             </section>
+             <!--مشاهير مروا من هنا-->
+             <section class="containing">
+                <div class="logohat">
+                    <img src="assets/images/logo/logo.png" alt="">
+                </div>
+                <p class="celebritypasses">مشــــاهير مَــــرَّوْا من هــــنا!!</p>
+                <div class="celebrity-wrapper">
+                    <div cname="أحمد عز!!" class="portrait image1">
+                        <img src="assets/images/gallery/1.jpg" alt="">
+                    </div>
+                    <div cname="أحمد رزق!!" class="portrait image2">
+                        <img src="assets/images/gallery/2.jpg" alt="">
+                    </div>
+                    <div cname="اسماعيل يس!!" class="portrait image3">
+                        <img src="assets/images/gallery/3.jpg" alt="">
+                    </div>
+                    <div cname="الشرنوبي!!" class="portrait image4">
+                        <img src="assets/images/gallery/4.jpg" alt="">
+                    </div>
+                    <div cname="خالد سليم!!" class="portrait image5">
+                        <img src="assets/images/gallery/5.jpg" alt="">
+                    </div>
+                </div> 
+                <div class="view">
+                    <div id="introduce-celebrity">
+                        <i class="fas fa-share fa-small"></i> 
+                        <span>خالد سليم!!</span>
+                    </div>
+                    <div class="view-window">
+                        <div class="portrait">
+                            <img src="assets/images/gallery/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!--اعمل هدية واتطمن من تأثير ادهاشها-->
             <Section class="ad-two advertising-Section">
                 <div class="container">
@@ -126,6 +163,7 @@
                     </div>
                 </div>
             </section>
+            
             <!--the Main Gallery-->
             <Section class="swiper-gallary" id="gallery"><!--flex container-->
                 <div class="swiper-wrapper">
@@ -143,6 +181,8 @@
                   <!-- Add Pagination -->
                   <div class="swiper-pagination"></div>
             </Section>
+           
+
         </main>
         <footer id="contact">
             <div class="contacting"> <!--يمين-->
@@ -189,11 +229,9 @@
             </div>
         </footer>
         <div class="copyright"> &copy; 2021 ahmed-khaled  All rights reserved.</div>      
-        
         <div class="whatsapp-fixed-icon">
             <a href="http://whatsapp.com" target="_blank"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a> 
         </div> 
-        
         <!--vanilla titl.js for portrait-->
        <script type="text/javascript" src="java Scripts/vanilla-tilt.js"></script>
        <script>
@@ -204,6 +242,8 @@
             "max-glare": 1,
 	        });
        </script>
+       <!--celebrity.js for responive view-->
+       <script src="java Scripts/change celebrity.js"></script>
        <!--swiper.js scriptfile-->
        <script src="java Scripts/swiperScriptSource.js"></script><!--https://unpkg.com/swiper/swiper-bundle.min.js-->
        <script>
